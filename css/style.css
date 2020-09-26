@@ -3,7 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    font-family: 'Eczar', serif;
+    
+}
 
+.header{
+    background: radial-gradient(#fff, #adc8ee);
+}
 .nav-container{
     max-width: 1300px;
     margin: auto;
@@ -55,6 +62,7 @@ p{
 }
 .front-col h1{
     font-size: 50px;
+    font-family: 'Faster One', cursive;
     line-height: 60px;
     margin-left: 150px;
 }
