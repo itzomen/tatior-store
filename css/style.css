@@ -38,3 +38,34 @@ p{
     color: rgb(0, 5, 5);
 
 }
+
+.front-row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.front-col{
+    flex-basis: 50%;
+    min-width: 300;
+}
+.front-col img{
+    max-width: 100%;
+    padding: 50px 0;
+}
+.front-col h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin-left: 150px;
+}
+.front-col p{
+    margin-left: 150px;
+}
+.button{
+    display: inline-block;
+    background: #4b81c7;
+    color: #fff;
+    margin-left: 150px;
+    padding: 8px 30px;
+    border-radius: 40px;
+}
