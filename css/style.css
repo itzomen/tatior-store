@@ -347,4 +347,12 @@ ul{
     .col-4 img{
         width: 50%;
     }
+    .col-2{
+        flex-basis: 100%;
+        padding: 30px;
+    }
+    .offer .col-2 img{
+        width: 100%;
+        padding: 10%;
+    }
 }
