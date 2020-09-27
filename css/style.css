@@ -203,3 +203,20 @@ p{
     font-weight: 600;
     color: #555;
 }
+
+/* brands */
+
+.brands{
+    margin: 100px auto;
+}
+.col-5{
+    width: 150px;
+}
+.col-5 img{
+    width: 70%;
+    cursor: pointer;
+    filter: grayscale(70%);
+}
+.col-5 img:hover{
+    filter: grayscale(0);
+}
