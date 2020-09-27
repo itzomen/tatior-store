@@ -168,3 +168,38 @@ p{
 .col-2 a{
     margin-left: 0;
 }
+
+/* review section */
+.review{
+    padding-top: 80px;
+}
+.review .col-3{
+    text-align: center;
+    padding: 40px 30px;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.6s;
+}
+.review .col-3:hover{
+    transform: translateY(-15px);
+}
+.review .col-3 img{
+    width: 100px;
+    margin-top: 10px;
+    border-radius: 50%;
+}
+.fas.fa-quote-right{
+    font-size: initial;
+    color: rosybrown;
+}
+.review .col-3 p{
+    font-size: 15px;
+    color: #000;
+    font-family: 'Eczar', serif;
+    margin: 12px 0;
+}
+.review .col-3 h3{
+    font-size: 16px;
+    font-weight: 600;
+    color: #555;
+}
