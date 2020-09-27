@@ -103,13 +103,28 @@ p{
     margin: 0 auto 40px;
     position: relative;
     line-height: 60px;
-    color#555
+    color: #555;
+}
+.title::after{
+    content: '';
+    background: rgb(10, 204, 238);
+    width: 100px;
+    height: 5px;
+    border-radius: 6px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .col-3{
     flex-basis: 33.33%;
     min-width: 300px;
     margin-top: 20px;
     margin-bottom: 30px;
+    transition: transform 0.5s;
+}
+.col-3:hover{
+    transform: translateY(-8px);
 }
 .col-3 img{
     width: 100%;
@@ -118,4 +133,7 @@ p{
     font-family: 'Faster One', cursive;
     font-size: 20px;
     color: rgb(245, 19, 19);
+}
+.rating .fa{
+    color: #fbe519;
 }
