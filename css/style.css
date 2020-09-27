@@ -269,7 +269,7 @@ ul{
 
 /* media query for small screens */
 .fas.fa-bars{
-    width: 28px;
+    width: 50px;
     margin-left: 20px;
     display: none;
 }
@@ -306,23 +306,44 @@ ul{
     .front-row{
         text-align: center;
     }
-    .front-col, .col-4, .col-3{
-        flex-basis: 100%;
-    }
-    .front-col{
-        flex-basis: 50%;
-        min-width: 300;
-    }
+    
     .front-col img{
-        max-width: 52%;
+        max-width: 92%;
         padding: 50px 0;
     }
     .front-col h1{
         text-align: center;
+        font-size: 30px;
         margin-left: 0;
+    }
+    .button{
+        display: inline-block;
+        margin-left: 35px;
+        padding: 0 15px;
     }
     .front-col p{
         text-align: center;
         margin-left: 0;
+    }
+}
+@media only screen and (max-width:600px){
+    /* front row section */
+    .button{
+        display: inline-block;
+        margin-left: 25px;
+        margin-bottom: 50px;
+        padding: 0 15px;
+    }
+}
+@media only screen and (max-width:500px){
+    /* front row section */
+    .front-col{
+        flex-basis: 100%;
+    }
+    .col-4 h4{
+        text-align: center;
+    }
+    .col-4 img{
+        width: 50%;
     }
 }
