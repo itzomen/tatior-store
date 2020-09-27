@@ -17,14 +17,15 @@
                     <img src="images/brand.png" width="150px">
                 </div>
                 <div class="nav">
-                    <ul>
+                    <ul id="menu-items">
                         <li><a href="">Acceuil</a></li>
                         <li><a href="">Produits</a></li>
                         <li><a href="">Contacte</a></li>
-                        <li><a href="">A Propos</a></li>
+                        <li><a href="">Infos</a></li>
                     </ul>
                 </div>
                 <img src="images/cart.png" width="30px" height="30px">
+                <i class="fas fa-bars" onclick="togglemenu()"></i>
             </div>
             <div class="front-row">
                 <div class="front-col">
@@ -306,5 +307,19 @@
         </div>
     </div>
 
+<!-- js to toggle-menu -->
+    <script>
+        var Items = document.getElementById("menu-items");
+
+        Items.style.maxHeight = "0px"
+        function togglemenu(){
+            if(Items.style.maxHeight == "0px"){
+                Items.style.maxHeight = "200px";
+            }
+            else{
+                Items.style.maxHeight = "0px";
+            }
+        }
+    </script>
 </body>
 </html>

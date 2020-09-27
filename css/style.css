@@ -266,3 +266,36 @@ ul{
     margin-bottom: 1px;
 }
 
+
+/* media query for small screens */
+.fas.fa-bars{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+
+@media only screen and (max-width:800px){
+    .nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #000;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    .nav ul li{
+        display: block;
+        color: #fbe519;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .nav ul li a{
+        color: aliceblue;
+    }
+    .fas.fa-bars{
+        display: block;
+        cursor: pointer;
+    }
+}
