@@ -299,3 +299,68 @@ ul{
         cursor: pointer;
     }
 }
+
+/* media query for small screens < 700px */
+@media only screen and (max-width:700px){
+    /* front row section */
+    .front-row{
+        text-align: center;
+    }
+    .front-col, .col-4, .col-3{
+        flex-basis: 100%;
+    }
+    .front-col{
+        flex-basis: 50%;
+        min-width: 300;
+    }
+    .front-col img{
+        max-width: 42%;
+        padding: 50px 0;
+    }
+    .front-col h1{
+        text-align: center;
+        margin-left: 0;
+    }
+    .front-col p{
+        text-align: center;
+        margin-left: 0;
+    }
+    
+    .button{
+        margin-left: 0;
+        margin-bottom: 10%;
+    }
+
+    /* categories */
+    .categories{
+        margin: 20px;
+    }
+    .small-container{
+        max-width: 700;
+        margin: auto;
+    }
+    .col-4{
+        flex-basis: 25%;
+    }
+    .col-4 img{
+        width: 50%;
+    }
+
+    /* products */
+    .title{
+        text-align: center;
+        margin: 0 auto 40px;
+        position: relative;
+        line-height: 60px;
+        color: #555;
+    }
+    
+    .col-3{
+        flex-basis: 33.33%;;
+    }
+    .col-3 img{
+        width: 80%;
+    }
+
+
+}
