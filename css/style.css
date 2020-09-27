@@ -338,10 +338,10 @@ ul{
 @media only screen and (max-width:500px){
     /* front row section */
     .cart{
-        margin-left: 10%;
+        margin-left: 5%;
     }
     .fas.fa-bars{
-        margin-left: 30%;
+        margin-left: 20%;
     }
     .front-col{
         flex-basis: 100%;
