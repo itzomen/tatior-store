@@ -337,6 +337,12 @@ ul{
 }
 @media only screen and (max-width:500px){
     /* front row section */
+    .cart{
+        margin-left: 10%;
+    }
+    .fas.fa-bars{
+        margin-left: 35%;
+    }
     .front-col{
         flex-basis: 100%;
     }
@@ -354,5 +360,8 @@ ul{
     .offer .col-2 img{
         width: 100%;
         padding: 10%;
+    }
+    .row-2 img{
+        margin-left: 0;
     }
 }
