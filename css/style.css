@@ -5,6 +5,7 @@
 }
 body{
     font-family: 'Eczar', serif;
+    background-color: #fdfbfb;
 }
 
 /* navbar */
@@ -33,6 +34,25 @@ body{
 .nav ul li{
     display: inline-block;
     margin-right: 40px;
+    font-weight: 700;
+}
+.active{
+    text-align: center;
+    margin: 0 auto 40px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+.active::after{
+    content: '';
+    background: rgb(71, 213, 238);
+    width: 98%;
+    height: 5px;
+    border-radius: 6px;
+    position: absolute;
+    margin-top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 a{
@@ -308,6 +328,57 @@ select:focus{
     color: azure;
 }
 
+
+/* product details styling */
+.details{
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+.details .col-2{
+    padding: 20px;
+}
+.details .col-2 img{
+    padding: 0;
+}
+.details .col-2 h4{
+    font-family: 'Faster One', cursive;
+    font-size: 35px;
+    color: rgb(245, 19, 19);   
+}
+.details .col-2 select{
+    display: block;
+    padding: 5px;
+    margin-top: 18px;
+
+}
+.details .col-2 input{
+    margin-top: 20px;
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 25px;
+    margin-right: 30px;
+    border: 1px solid #4b81c7;
+}
+input:focus{
+    outline: none;
+}
+
+.imgs-row{
+    display: flex;
+    justify-content: space-between;
+}
+.imgs-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+.smallImg:hover{
+    transform: translateY(-30%);
+}
+
+
+
+
 /* media query for small screens */
 .fas.fa-bars{
     width: 50px;
@@ -335,6 +406,9 @@ select:focus{
     .nav ul li a{
         color: aliceblue;
     }
+    .active{
+        color: #4b81c7;
+    }
     .fas.fa-bars{
         display: block;
         cursor: pointer;
@@ -351,6 +425,12 @@ select:focus{
     .front-col img{
         max-width: 92%;
         padding: 50px 0;
+    }
+    .details .front-row .col-2 select{
+        margin-left: 30%;
+    }
+    .details .front-row .col-2 h1,.details .front-row .col-2 h4{
+        font-size: 35px;
     }
     .front-col h1{
         text-align: center;

@@ -18,7 +18,7 @@
                 <div class="nav">
                     <ul id="menu-items">
                         <li><a href="index.html">Home</a></li>
-                        <li><a class="active" href="products.html">Products</a></li>
+                        <li><a href="products.html">Products</a></li>
                         <li><a href="">Contact</a></li>
                         <li><a href="">About</a></li>
                     </ul>
@@ -29,20 +29,48 @@
         </div>
 
 
-<!-- all products section -->
-    <div class="small-container">
-        <div class="row-rate">
-            <h2>All Products</h2>
-            <select>
-                <option>Default Sorting</option>
-                <option>Sort by Rating</option>
-                <option>Sort by Price</option>
-                <option>Sort by Popularity</option>
-            </select>
+<!-- product details -->
+    <div class="small-container details">
+        <div class="front-row">
+            <div class="col-2">
+                <img src="images/macbook-pro.png" width="100%" id="mainImg">
+                <div class="imgs-row">
+                    <div class="imgs-col">
+                        <img src="images/laptop-33.png" width="100%" class="smallImg">
+                    </div>
+                    <div class="imgs-col">
+                        <img src="images/laptop.png" width="100%" class="smallImg">
+                    </div>
+                    <div class="imgs-col">
+                        <img src="images/mac-white.png" width="100%" class="smallImg">
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <p>Macbooks</p>
+                <h1>Mac Pro</h1>
+                <h4>$534</h4><strike>$2555</strike>
+                <h3>Characteristics</h3>
+                <p>Best pc for business and professional work.</p>
+                <select>
+                    <option>Choose Ram</option>
+                    <option>4Gb</option>
+                    <option>8Gb</option>
+                    <option>16Gb</option>
+                    <option>32Gb</option>
+                </select>
+                <input type="number" value="1">
+                <a href="" class="button"> Add to Cart </a>
+            </div>
         </div>
+    </div>
+
+    <!-- related products -->
+    <div class="small-container">
+        <center><h2>Related Products</h2></center>
         <div class="front-row">
             <div class="col-3">
-                <img src="images/macbook-pro.png">
+                <img src="images/laptop.png">
                 <div class="rating">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -51,7 +79,7 @@
                     <i class="fas fa-star-half-alt"></i>
                 </div>
                 <h4>PC Omen Pro</h4>
-                <p>$534</p><strike>$2555</strike>
+                <p>$534</p>
             </div>
             <div class="col-3">
                 <img src="images/laptop-33.png">
@@ -63,7 +91,7 @@
                     <i class="far fa-star"></i>
                 </div>
                 <h4>Elitebook t4</h4>
-                <p>$534</p><strike>$2555</strike>
+                <p>$534</p>
             </div>
             <div class="col-3">
                 <img src="images/laptop.png">
@@ -77,49 +105,7 @@
                 <h4>Asus Pro</h4>
                 <p>$534</p>
             </div>
-            <div class="col-3">
-                <img src="images/laptop-33.png">
-                <div class="rating">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                    <i class="far fa-star"></i>
-                </div>
-                <h4>DELL Pro</h4>
-                <p>$534</p>
-            </div>
-            <div class="col-3">
-                <img src="images/laptop-33.png">
-                <div class="rating">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                    <i class="far fa-star"></i>
-                </div>
-                <h4>Macbook Pro</h4>
-                <p>$534</p>
-            </div>
-            <div class="col-3">
-                <img src="images/laptop-33.png">
-                <div class="rating">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
-                </div>
-                <h4>Probook Hp</h4>
-                <p>$534</p><strike>$2555</strike>
-            </div>
-        </div>
-        <div class="next-page">
-            <i class="far fa-arrow-alt-circle-left"></i>
-            <span>1</span>
-            <span>2</span>
-            <span>3</span>
-            <i class="far fa-arrow-alt-circle-right"></i>
+
         </div>
     </div>
 
@@ -181,8 +167,9 @@
         </div>
     </div>
 
-<!-- js to toggle-menu -->
+
     <script>
+        // js to toggle-menu
         var Items = document.getElementById("menu-items");
 
         Items.style.maxHeight = "0px"
@@ -194,6 +181,20 @@
                 Items.style.maxHeight = "0px";
             }
         }
+
+        //js for product images
+        var mainImg = document.getElementById("mainImg");
+        var smallImg = document.getElementsByClassName("smallImg");
+        
+        for (let i = 0; i < smallImg.length; i++) {
+            
+            smallImg[i].onclick = function () {
+                temp = mainImg.src
+                mainImg.src = smallImg[i].src
+                smallImg[i].src = temp
+            }    
+        }
+  
     </script>
 </body>
 </html>
