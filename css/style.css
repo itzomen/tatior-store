@@ -107,7 +107,7 @@ p{
     width: 70%;
 }
 .col-4 h4{
-    margin-left: 34px;
+    text-align: center;
 }
 
 
@@ -131,8 +131,9 @@ p{
     transform: translateX(-50%);
 }
 .col-3{
-    flex-basis: 33.33%;
+    flex-basis: 25%;
     min-width: 300px;
+    margin-left: 42px;
     margin-top: 20px;
     margin-bottom: 30px;
     transition: transform 0.5s;
@@ -141,7 +142,7 @@ p{
     transform: translateY(-8px);
 }
 .col-3 img{
-    width: 100%;
+    width: 90%;
 }
 .col-3 p{
     font-family: 'Faster One', cursive;
@@ -266,6 +267,46 @@ ul{
     margin-bottom: 1px;
 }
 
+/* all products styling */
+
+.row-rate{
+    display: flex;
+    padding-left: 100px;
+    padding-right: 100px;
+    justify-content: space-between;
+    margin: 100px auto 50px;
+}
+
+select{
+    border: 1px solid #4b81c7;
+    padding: 5px;
+    max-height: 30px;
+}
+select:focus{
+    outline: none;
+}
+.next-page{
+    margin: 20px auto 0px;
+    margin-left: 100px;
+    max-height: 20px;
+}
+.far.fa-arrow-alt-circle-right{
+    padding-left: 20px;
+}
+.next-page span{
+    display: inline-block;
+    border: 1px solid #4b81c7;
+    margin-left: 20px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+.next-page span:hover{
+    background: #4b81c7;
+    color: azure;
+}
 
 /* media query for small screens */
 .fas.fa-bars{
@@ -366,3 +407,4 @@ ul{
         margin-left: 0;
     }
 }
+

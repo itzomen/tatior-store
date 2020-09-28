@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Tatior E-shop design </title>
+    <title> Tatior E-shop Products </title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Eczar:wght@400;600;800&family=Faster+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
 </head>
 <body>
     
-    <div class="header">
         <div class="nav-container">
             <div class="navbar">
                 <div class="brand">
@@ -27,92 +26,23 @@
                 <img class="cart" src="images/cart.png" width="30px" height="30px">
                 <i class="fas fa-bars" onclick="togglemenu()"></i>
             </div>
-            <div class="front-row">
-                <div class="front-col">
-                    <img src="images/front.png">
-                </div>
-                <div class="front-col">
-                    <strong><h1>HIGH-TECH <br> FOR ALL!</h1></strong>
-                    <br>
-                    <p>Your electronic store</p>
-                    <br>
-                    <a href="" class="button">Explore &#10140;</a>
-                </div>
-            </div>
         </div>
-    </div>
 
-<!-------- categories -------->
-    <div class="categories">
-        <div class="small-container">
-            <div class="front-row">
-                <div class="col-4">
-                    <img src="images/apple.png">
-                    <h4>Macbook</h4>
-                </div>
-                <div class="col-4">
-                    <img src="images/windows.png">
-                    <h4>Windows</h4>
-                </div>
-                <div class="col-4">
-                    <img src="images/gamer.png">
-                    <h4>Gaming Laptops</h4>
-                </div>
-                <div class="col-4">
-                    <img src="images/gadget.png">
-                    <h4>Others</h4>
-                </div>
-            </div>
-        </div>
-    </div>
 
-<!-- featured products -->
+<!-- all products section -->
     <div class="small-container">
-        <h2 class="title">Featured Products</h2>
-        <div class="front-row">
-            <div class="col-3">
-                <img src="images/macbook-pro.png">
-                <div class="rating">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <h4>Macbook Pro</h4>
-                <p>$534</p>
-            </div>
-            <div class="col-3">
-                <img src="images/laptop.png">
-                <div class="rating">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
-                </div>
-                <h4>Laptop</h4>
-                <p>$734</p>
-            </div>
-            <div class="col-3">
-                <img src="images/macbook-pro.png">
-                <div class="rating">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
-                </div> 
-                <h4>Macbook</h4>
-                <p>$434</p>
-            </div>
+        <div class="row-rate">
+            <h2>All Products</h2>
+            <select>
+                <option>Default Sorting</option>
+                <option>Sort by Rating</option>
+                <option>Sort by Price</option>
+                <option>Sort by Popularity</option>
+            </select>
         </div>
-
-        <!-- products section -->
-        <h2 class="title">Our Products</h2>
         <div class="front-row">
             <div class="col-3">
-                <img src="images/laptop-33.png">
+                <img src="images/macbook-pro.png">
                 <div class="rating">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -136,7 +66,7 @@
                 <p>$534</p>
             </div>
             <div class="col-3">
-                <img src="images/laptop-33.png">
+                <img src="images/laptop.png">
                 <div class="rating">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -184,69 +114,12 @@
                 <p>$534</p>
             </div>
         </div>
-    </div>
-
-    <div class="offer">
-        <div class="small-container">
-            <div class="front-row">
-                <div class="col-2">
-                    <img src="images/mac-white.png" class="offer-img">
-                </div>
-                <div class="col-2">
-                    <p>Only Available at Tatior</p>
-                    <h1>Macbook 2020</h1>
-                    <h5>Extra slim, powerful and reliable. Best perfomances, best deal</h5>
-                    <br>
-                    <a href="" class="button">Acheter &#10140;</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <!-- review section -->
-    <div class="review">
-        <div class="small-container">
-            <div class="front-row">
-                <div class="col-3">
-                    <i class="fas fa-quote-right"></i>
-                    <p>Trop cool, Tatior</p>
-                    <div class="rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                    <img src="images/owl.png">
-                    <h3>Mr Henry</h3>
-                </div>
-                <div class="col-3">
-                    <i class="fas fa-quote-right"></i>
-                    <p>Tatior has the best deals and offers</p>
-                    <div class="rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                    <img src="images/owl.png">
-                    <h3>Tony Park</h3>
-                </div>
-                <div class="col-3">
-                    <i class="fas fa-quote-right"></i>
-                    <p>Been using my awesome pc for years.</p>
-                    <div class="rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                    <img src="images/owl.png">
-                    <h3>Stacy HEm</h3>
-                </div>
-            </div>
+        <div class="next-page">
+            <i class="far fa-arrow-alt-circle-left"></i>
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <i class="far fa-arrow-alt-circle-right"></i>
         </div>
     </div>
 
