@@ -377,8 +377,6 @@ input:focus{
 }
 
 
-
-
 /* media query for small screens */
 .fas.fa-bars{
     width: 50px;
@@ -421,7 +419,6 @@ input:focus{
     .front-row{
         text-align: center;
     }
-    
     .front-col img{
         max-width: 92%;
         padding: 50px 0;
