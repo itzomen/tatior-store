@@ -450,6 +450,7 @@ td img:hover{
 }
 .far.fa-trash-alt{
     cursor: pointer;
+    text-transform: lowercase;
 }
 .fas.fa-sort-up, .fas.fa-sort-down{
     cursor: pointer;
