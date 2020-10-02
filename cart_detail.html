@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Tatior E-shop Products </title>
+    <title> Tatior E-shop Cart </title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Eczar:wght@400;600;800&family=Faster+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
@@ -30,86 +30,69 @@
             </div>
         </div>
 
-
-<!-- product details -->
-    <div class="small-container details">
+    <!-- cart details section -->
+    <div class="small-container Cart">
+        <h2>Your Shopping Cart</h2>
         <div class="front-row">
-            <div class="col-2">
-                <img src="images/macbook-pro.png" width="100%" id="mainImg">
-                <div class="imgs-row">
-                    <div class="imgs-col">
-                        <img src="images/laptop-33.png" width="100%" class="smallImg">
-                    </div>
-                    <div class="imgs-col">
-                        <img src="images/laptop.png" width="100%" class="smallImg">
-                    </div>
-                    <div class="imgs-col">
-                        <img src="images/mac-white.png" width="100%" class="smallImg">
-                    </div>
-                </div>
-            </div>
-            <div class="col-2">
-                <p>Macbooks</p>
-                <h1>Mac Pro</h1>
-                <h4>$534</h4><strike>$2555</strike>
-                <h3>Characteristics</h3>
-                <p>Best pc for business and professional work.</p>
-                <select>
-                    <option>Choose Ram</option>
-                    <option>4Gb</option>
-                    <option>8Gb</option>
-                    <option>16Gb</option>
-                    <option>32Gb</option>
-                </select>
-                <input type="number" value="1">
-                <a href="" class="button"> Add to Cart </a>
-            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Image</th>
+                        <th>Quantity</th>
+                        <th>Unit Price</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <h4>Macbook Pro</h4>
+                        </td>
+                        <td>
+                            <img src="images/macbook-pro.png">
+                        </td>
+                        <td>
+                            <i class="fas fa-sort-up"></i>
+                            <h4>3</h4>
+                            <i class="fas fa-sort-down"></i>
+                        </td>
+                        <td>
+                            <strong>$345</strong>
+                            <br>
+                            <i class="far fa-trash-alt">Remove</i>
+                        </td>
+                        <td>
+                            <strong>$1035</strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4>Macbook Pro</h4>
+                        </td>
+                        <td>
+                            <img src="images/laptop-33.png">
+                        </td>
+                        <td>
+                            <i class="fas fa-sort-up"></i>
+                            <h4>1</h4>
+                            <i class="fas fa-sort-down"></i>
+                        </td>
+                        <td>
+                            <strong>$300</strong>
+                            <br>
+                            <i class="far fa-trash-alt">Remove</i>
+                        </td>
+                        <td>
+                            <strong>$300</strong>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
+    
 
-    <!-- related products -->
-    <div class="small-container">
-        <center><h2>Related Products</h2></center>
-        <div class="front-row">
-            <div class="col-3">
-                <img src="images/laptop.png">
-                <div class="rating">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <h4>PC Omen Pro</h4>
-                <p>$534</p>
-            </div>
-            <div class="col-3">
-                <img src="images/laptop-33.png">
-                <div class="rating">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                    <i class="far fa-star"></i>
-                </div>
-                <h4>Elitebook t4</h4>
-                <p>$534</p>
-            </div>
-            <div class="col-3">
-                <img src="images/laptop.png">
-                <div class="rating">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                    <i class="far fa-star"></i>
-                </div>
-                <h4>Asus Pro</h4>
-                <p>$534</p>
-            </div>
-
-        </div>
-    </div>
 
     <!-- brands -->
     <div class="brands">

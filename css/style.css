@@ -36,6 +36,9 @@ body{
     margin-right: 40px;
     font-weight: 700;
 }
+.cart{
+    cursor: pointer;
+}
 .active{
     text-align: center;
     margin: 0 auto 40px;
@@ -375,6 +378,46 @@ input:focus{
 .smallImg:hover{
     transform: translateY(-30%);
 }
+
+/* cart details styling */
+.Cart{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.Cart table, th, td{
+    flex-basis: 95%;
+    border: 1px solid #4b81c7;
+}
+.Cart h2{
+    text-align: center;
+    margin-bottom: 15px;
+}
+table{
+    border-spacing: 4px;
+}
+th, td{
+    padding: 15px;
+}
+td{
+    text-align: center;
+}
+td img{
+    width: 100px;
+    cursor: pointer;
+    filter: grayscale(0);
+}
+td img:hover{
+    filter: grayscale(90%);
+}
+.far.fa-trash-alt{
+    cursor: pointer;
+}
+.fas.fa-sort-up, .fas.fa-sort-down{
+    cursor: pointer;
+    width: 6px;
+    color: #fd3511;
+}
+
 
 
 /* media query for small screens */
