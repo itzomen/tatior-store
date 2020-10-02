@@ -38,7 +38,7 @@ body{
     margin-right: 40px;
     font-weight: 700;
 }
-.cart{
+.fas.fa-shopping-cart{
     cursor: pointer;
 }
 .active{
