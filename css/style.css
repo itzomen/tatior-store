@@ -392,8 +392,17 @@ select:focus{
     margin-right: 30px;
     border: 1px solid #4b81c7;
 }
-input:focus{
-    outline: none;
+input[type=submit]{
+    flex: 60%;
+    background: #4b81c7;
+    color: #fff;
+    margin: 4px 2px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.5s;
+}
+input:hover{
+    background: #343434;
 }
 
 .imgs-row{
