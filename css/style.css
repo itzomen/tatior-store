@@ -38,19 +38,28 @@ body{
     margin-right: 40px;
     font-weight: 700;
 }
+
+/* hover effect in mav items */
+.nav ul li:hover{
+    border-bottom: 5px solid  rgb(71, 213, 238);
+    color: black;
+    transform: translateY(-10%);
+    
+}
+
 .fas.fa-shopping-cart{
     cursor: pointer;
 }
 .active{
     text-align: center;
-    margin: 0 auto 40px;
+    margin: 0 auto 30px;
     position: relative;
-    line-height: 60px;
-    color: #555;
+    line-height: 40px;
+    border-bottom: 5px solid  rgb(71, 213, 238);
+    color: rgb(14, 117, 117);
 }
 .active::after{
     content: '';
-    background: rgb(71, 213, 238);
     width: 98%;
     height: 5px;
     border-radius: 6px;
@@ -530,9 +539,12 @@ input[type=text]{
     .nav ul li{
         display: block;
         color: #fbe519;
-        margin-right: 50px;
         margin-top: 10px;
         margin-bottom: 10px;
+    }
+
+    .nav ul li:hover{
+        background-color:  rgb(71, 213, 238);
     }
     .nav ul li a{
         color: aliceblue;
