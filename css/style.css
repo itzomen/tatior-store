@@ -502,7 +502,9 @@ input[type=text]{
     margin-left: 0;
     cursor: pointer;
 }
-
+button{
+    width: 90%;
+}
 
 
 
